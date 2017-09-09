@@ -12,6 +12,10 @@
       "color": "#C80000",
       "theme": "dark"
     },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/freetonik/vscode-dnts"
+    },
     "engines": {
         "vscode": "^1.16.0"
     },
@@ -21,6 +25,7 @@
     "keywords": [
       "theme", "switch", "day", "night", "dark", "light", "mode"
     ],
+    "license": "SEE LICENSE IN LICENSE",
     "activationEvents": [
         "onCommand:extension.switchToNightTheme",
         "onCommand:extension.switchToDayTheme"
