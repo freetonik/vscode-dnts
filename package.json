@@ -1,0 +1,71 @@
+{
+    "name": "day-night-theme-switcher",
+    "displayName": "Day Night Theme Switcher",
+    "description": "Quickly switch between day and night themes for your eyes' sake.",
+    "version": "0.0.1",
+    "publisher": "freetonik",
+    "author": {
+        "name": "Rakhim Davletkaliyev"
+    },
+    "icon": "images/icon.png",
+    "galleryBanner": {
+      "color": "#C80000",
+      "theme": "dark"
+    },
+    "engines": {
+        "vscode": "^1.16.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "keywords": [
+      "theme", "switch", "day", "night", "dark", "light", "mode"
+    ],
+    "activationEvents": [
+        "onCommand:extension.switchToNightTheme",
+        "onCommand:extension.switchToDayTheme"
+    ],
+    "main": "./out/src/extension",
+    "contributes": {
+        "commands": [
+          {
+            "command": "extension.switchToNightTheme",
+            "title": "Night Theme"
+          },
+          {
+            "command": "extension.switchToDayTheme",
+            "title": "Day Theme"
+          }
+        ],
+        "configuration": {
+            "type": "object",
+            "title": "Theme scheduler configuration",
+            "properties": {
+                "dayNightThemeSwitcher.nightTheme": {
+                    "type": "string",
+                    "default": "Visual Studio Dark",
+                    "description": "The night theme"
+                },
+                "dayNightThemeSwitcher.dayTheme": {
+                    "type": "string",
+                    "default": "Visual Studio Light",
+                    "description": "The night theme"
+                }
+            }
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.5.2",
+        "vscode": "^1.1.5",
+        "mocha": "^3.5.0",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    }
+}
