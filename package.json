@@ -9,7 +9,7 @@
     },
     "icon": "images/icon.png",
     "galleryBanner": {
-      "color": "#C80000",
+      "color": "#947500",
       "theme": "dark"
     },
     "repository": {
@@ -23,7 +23,7 @@
         "Other"
     ],
     "keywords": [
-      "theme", "switch", "day", "night", "dark", "light", "mode"
+      "theme", "switch", "day", "night"
     ],
     "license": "SEE LICENSE IN LICENSE",
     "activationEvents": [

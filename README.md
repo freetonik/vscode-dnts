@@ -4,7 +4,7 @@ Define daytime and nighttime themes and quickly switch between them from the com
 
 ## Features
 
-![](images/dnts.gif)
+![](https://media.giphy.com/media/4Nk6EGaAnNeVi/giphy.gif)
 
 A darker, calmer color theme is better for your eyes during the night. But it's not always convinient during the day. This extension allows you to define daytime and nighttime themes and quickly switch between them.
 
