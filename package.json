@@ -59,7 +59,7 @@
                 "dayNightThemeSwitcher.dayTheme": {
                     "type": "string",
                     "default": "Visual Studio Light",
-                    "description": "The night theme"
+                    "description": "The day theme"
                 },
                 "dayNightThemeSwitcher.dayThemeCustomizations": {
                     "type": "object",
