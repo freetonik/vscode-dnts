@@ -9,12 +9,12 @@
     },
     "icon": "images/icon.png",
     "galleryBanner": {
-      "color": "#947500",
-      "theme": "dark"
+        "color": "#947500",
+        "theme": "dark"
     },
     "repository": {
-      "type": "git",
-      "url": "https://github.com/freetonik/vscode-dnts"
+        "type": "git",
+        "url": "https://github.com/freetonik/vscode-dnts"
     },
     "engines": {
         "vscode": "^1.16.0"
@@ -23,24 +23,32 @@
         "Other"
     ],
     "keywords": [
-      "theme", "switch", "day", "night"
+        "theme",
+        "switch",
+        "day",
+        "night"
     ],
     "license": "SEE LICENSE IN LICENSE",
     "activationEvents": [
-        "onCommand:extension.switchToNightTheme",
-        "onCommand:extension.switchToDayTheme"
+        "onCommand:dayNightThemeSwitcher.switchToNightTheme",
+        "onCommand:dayNightThemeSwitcher.switchToDayTheme",
+        "onCommand:dayNightThemeSwitcher.toggleDayNightTheme"
     ],
     "main": "./out/src/extension",
     "contributes": {
         "commands": [
-          {
-            "command": "extension.switchToNightTheme",
-            "title": "Night Theme"
-          },
-          {
-            "command": "extension.switchToDayTheme",
-            "title": "Day Theme"
-          }
+            {
+                "command": "dayNightThemeSwitcher.switchToNightTheme",
+                "title": "Night Theme"
+            },
+            {
+                "command": "dayNightThemeSwitcher.switchToDayTheme",
+                "title": "Day Theme"
+            },
+            {
+                "command": "dayNightThemeSwitcher.toggleDayNightTheme",
+                "title": "Toggle Day/Night Theme"
+            }
         ],
         "configuration": {
             "type": "object",
