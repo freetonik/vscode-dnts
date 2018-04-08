@@ -14,8 +14,14 @@ This extension contributes the following settings:
 
 * `dayNightThemeSwitcher.dayTheme`: day theme (default is "Visual Studio Light")
 * `dayNightThemeSwitcher.nightTheme`: night theme (default is "Visual Studio Dark")
+* `dayNightThemeSwitcher.dayThemeCustomizations`: day theme color customizations (default is `{}`)
+* `dayNightThemeSwitcher.nightThemeCustomizations`: night theme color customizations (default is `{}`)
 
 ## Release Notes
+
+### 0.0.2
+
+Added color customizations to settings.
 
 ### 0.0.1
 

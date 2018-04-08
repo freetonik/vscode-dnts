@@ -4,12 +4,15 @@ import * as vscode from 'vscode';
 const userConfig = vscode.workspace.getConfiguration();
 let extensionConfig;
 let nightTheme, dayTheme;
+let nightThemeCustomizations, dayThemeCustomizations;
 
 function updateSettings() {
   console.log("updated settings");
   extensionConfig = vscode.workspace.getConfiguration('dayNightThemeSwitcher');
   nightTheme = extensionConfig.nightTheme;
   dayTheme = extensionConfig.dayTheme;
+  nightThemeCustomizations = extensionConfig.nightThemeCustomizations;
+  dayThemeCustomizations = extensionConfig.dayThemeCustomizations;
 }
 
 export function activate(context: vscode.ExtensionContext) {
@@ -21,11 +24,13 @@ export function activate(context: vscode.ExtensionContext) {
   vscode.commands.registerCommand(extPrefix + '.switchToNightTheme', () => {
     console.log("to night: " + nightTheme);
     userConfig.update(themeKey, nightTheme, true);
+    userConfig.update("workbench.colorCustomizations", nightThemeCustomizations, true);
   });
 
   vscode.commands.registerCommand(extPrefix + '.switchToDayTheme', () => {
     console.log("to day: " + dayTheme);
     userConfig.update(themeKey, dayTheme, true);
+    userConfig.update("workbench.colorCustomizations", dayThemeCustomizations, true);
   });
 
   vscode.commands.registerCommand(extPrefix + '.toggleDayNightTheme', () => {

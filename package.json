@@ -2,7 +2,7 @@
     "name": "day-night-theme-switcher",
     "displayName": "Day Night Theme Switcher",
     "description": "Quickly switch between day and night themes for your eyes' sake.",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "freetonik",
     "author": {
         "name": "Rakhim Davletkaliyev"
@@ -59,10 +59,20 @@
                     "default": "Visual Studio Dark",
                     "description": "The night theme"
                 },
+                "dayNightThemeSwitcher.nightThemeCustomizations": {
+                    "type": "object",
+                    "default": {},
+                    "description": "The night theme color customizations"
+                },
                 "dayNightThemeSwitcher.dayTheme": {
                     "type": "string",
                     "default": "Visual Studio Light",
                     "description": "The day theme"
+                },
+                "dayNightThemeSwitcher.dayThemeCustomizations": {
+                    "type": "object",
+                    "default": {},
+                    "description": "The day theme color customizations"
                 }
             }
         }
