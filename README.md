@@ -6,7 +6,7 @@ Define daytime and nighttime themes and quickly switch between them from the com
 
 ![](https://media.giphy.com/media/4Nk6EGaAnNeVi/giphy.gif)
 
-A darker, calmer color theme is better for your eyes during the night. But it's not always convinient during the day. This extension allows you to define daytime and nighttime themes and quickly switch between them.
+A darker, calmer color theme is better for your eyes during the night. But it's not always convenient during the day. This extension allows you to define daytime and nighttime themes and quickly switch between them.
 
 ## Extension Settings
 
@@ -19,8 +19,11 @@ This extension contributes the following settings:
 
 ## Release Notes
 
-### 0.0.2
+### 0.0.3
 
+Added a keybinding to toggle theme (`ctrl+alt+t` on Windows and Linux, `cmd+alt+t` on macOS).
+
+### 0.0.2
 Added color customizations to settings.
 
 ### 0.0.1
