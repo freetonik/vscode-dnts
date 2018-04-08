@@ -24,6 +24,7 @@ This extension contributes the following settings:
 Added a keybinding to toggle theme (`ctrl+alt+t` on Windows and Linux, `cmd+alt+t` on macOS).
 
 ### 0.0.2
+
 Added color customizations to settings.
 
 ### 0.0.1
