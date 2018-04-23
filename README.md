@@ -19,6 +19,10 @@ This extension contributes the following settings:
 
 ## Release Notes
 
+### 0.0.4
+
+Made toggle switch to day or night theme even when neither is the current theme
+
 ### 0.0.3
 
 Added a keybinding to toggle theme (`ctrl+alt+t` on Windows and Linux, `cmd+alt+t` on macOS).
